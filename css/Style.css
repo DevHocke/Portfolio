@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    /* background color */
+   --clr-main-background: #EDEDED;
+   --clr-background-dark-green: #405559;
+   --clr-background-light-green: #68868C;
+   --clr-background-dark-gray: #3E3E3E;
+   /* Text colors */
+   --text-main: #EDEDED;
+   --text-golden: #E76F51;
+   --text-link: #e4e7e6;
+   --text-link-hover: #E76F51;
+   /* Fonts */
+   --font-standard: 'Motserrat 400', sans-serif; 
+   --font-h1: 'Montserrat 900', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+html {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+header {
+    display: block;
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: var(--clr-background-dark-gray);
+    /* background-color: #97afa3; */
+    min-height: 10em;
+    min-width: 100%;
+    text-align: center;
+}
+
+header h1{
+    padding: 0.5em;
+    margin: 0;
+}
+img{
+    max-width: 100%;
+}
+
+ul{
+    display: block;
+    margin: 1em 0;
+    padding: 0;
+}
+nav li {
+    list-style-type: none;
+    margin-bottom: 0.5em;
+}
+
+nav li a {
+    color: #fff;
+    display: block;
+    font-family: 'Fredoka One', cursive;
+    font-size: 1.2rem;
+    padding: 0.15em;
+}
+/* nav li:last-of-type {
+    margin-bottom: 3em;
+} */
+
+a:link {
+    text-decoration: none;
+    color: var(--text-link);
+}
+
+a:visited {
+    color: var(--text-link);
+}
+a:focus, a:hover{
+    color: var(--text-golden)
+}
+
+.wrapper {
+    min-height: 100vh;
+    max-width: 100vw;
+}
+
+/* p {
+    font-size: 1.5rem;
+    color: black;
+} */
+.imageStretch{
+    object-fit: cover;
+}
+
+
+.headerText{
+ font-family: var(--font-h1);
+ font-size: 2rem;
+ 
+}
+
+
+
+
+
+/* Styr sociala medier länkarna i footern.*/
+/* #linkedin {
+    display: inline-block;
+    width: 13%;
+}
+
+#github {
+    display: inline-block;
+    width: 13%;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 0fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+} */ 
+
+/* ID myBtn och myBtn hover styr utseendet på scrollfunktionen i javascriptet.*/
+/* #myBtn {
+    background-color: #97afa3;
+    border-radius: 5px;
+    border: none;
+    bottom: 85px;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    font-size: 18px;
+    outline: none;
+    position: fixed;
+    padding: 5px;
+    right: 10px;
+    z-index: 99;
+}
+
+#myBtn:hover {
+    background-color: #97afa3;
+} */
+
+/* testar leka med grid för hero och deras text*/
+
+.start {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    text-align: center;
+}
+
+.heroOneTextBottom {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.heroOneText {
+    grid-area: 1 / 1 / 2 / 2;
+    padding: 1em;
+}
+
+.heroImgOne {
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+
+.about {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    text-align: center;
+}
+
+.heroTwoTextBottom {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.heroTwoText {
+    grid-area: 1 / 1 / 2 / 2;
+    padding: 1em;
+}
+
+.heroImgTwo {
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+
+.portfolio{
+
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+    
+.classes { grid-area: 1 / 1 / 2 / 2; }
+.techniques { grid-area: 2 / 3 / 2 / 2; }
+.projects { grid-area: 2 / 1 / 3 / 2; }
+.cv { grid-area: 2 / 2 / 3 / 2; }  

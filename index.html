@@ -1,12 +1,100 @@
 <!DOCTYPE html>
 <html lang="sv">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/Style.css" rel="stylesheet" />
     <title>Portfolio</title>
 </head>
+
 <body>
-    
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <div class="wrapper">
+        <header>
+            <h1 class="headerText">Håkan Eriksson</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">about.</a></li>
+                    <li><a href="#portfolio">portfolio.</a></li>
+                    <li><a href="#contact">contact.</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="start" id="start">
+            
+
+            <div class="heroOneTextBottom">
+                <div class="heroOneText">
+                    <h2>home</h2>
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                        ut
+                        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                        culpa qui officia deserunt mollit anim id est laborum."</p>
+                </div>
+            </div>
+            <div class="heroImgOne"><img src="images\HakanHome.jpg" class="imageStretch" alt="HakanE.jpg" /></div>
+        </div>
+
+        <div class="about" id="about">
+            
+            <div class="heroImgTwo"><img src="images\kott.png" alt="kottbutik.png" /></div>
+            <div class="heroTwoTextBottom"></div>
+            <div class="heroTwoText">
+                <h2>about</h2>
+                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum."</p>
+            </div>
+        </div>
+
+    </div>
+    <div class="portfolio" id="portfolio">
+
+        <h2>portfolio</h2>
+        <div class="card">
+            <!-- <img src="images\briefCase.png" alt="briefCase.png" /> -->
+            <div class="briefcaseGrid">
+                <div class="classes">
+                    <h3>Classes</h3>
+                    <p>Programmering 1 Betyg A</p>
+                </div>
+                <div class="techniques">
+                    <h3>Techniques</h3>
+                    <p>C#</p>
+                </div>
+                <div class="projects">
+                    <h3>Projects</h3>
+                </div>
+                <div class="cv">
+                    <h3>CV</h3>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="contact" id="contact">
+        <h2>contact</h2>
+
+    </div>
+
+
+    <div class="footer">
+        <a href="https://www.linkedin.com/in/h%C3%A5kan-eriksson-1076391bb/" rel="nofollow" target="_blank"><img
+                id="linkedin" src="images\linkedin.svg" alt="linkedin.svg"></a>
+        <a href="https://github.com/DevHocke" rel="nofollow" target="_blank"><img id="github" src="images\Git.png"
+                alt="Git.png"></a>
+    </div>
+    </div>
+
+    <script src="script/script.js"></script>
+
 </body>
+
 </html>
