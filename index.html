@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link href="css/Style.css" rel="stylesheet" />
     <title>Portfolio</title>
 </head>
@@ -37,12 +39,12 @@
                         culpa qui officia deserunt mollit anim id est laborum."</p>
                 </div>
             </div>
-            <div class="heroImgOne"><img src="images\HakanHome.jpg" class="imageStretch" alt="HakanE.jpg" /></div>
+            <div class="heroImgOne"><picture><img src="images\HakanHome.jpg" class="imageStretch" alt="HakanE.jpg" /></picture></div>
         </div>
 
         <div class="about" id="about">
             
-            <div class="heroImgTwo"><img src="images\kott.png" alt="kottbutik.png" /></div>
+            <div class="heroImgTwo"><picture><img src="images\kott.png" alt="kottbutik.png" /></picture></div>
             <div class="heroTwoTextBottom"></div>
             <div class="heroTwoText">
                 <h2>about</h2>
@@ -55,30 +57,37 @@
         </div>
 
     </div>
-    <div class="portfolio" id="portfolio">
-
-        <h2>portfolio</h2>
+    <div class="card-group" id="portfolio">
         <div class="card">
-            <!-- <img src="images\briefCase.png" alt="briefCase.png" /> -->
-            <div class="briefcaseGrid">
-                <div class="classes">
-                    <h3>Classes</h3>
-                    <p>Programmering 1 Betyg A</p>
-                </div>
-                <div class="techniques">
-                    <h3>Techniques</h3>
-                    <p>C#</p>
-                </div>
-                <div class="projects">
-                    <h3>Projects</h3>
-                </div>
-                <div class="cv">
-                    <h3>CV</h3>
-                </div>
+            <img class="card-img-top" src="images\classes.jpg" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">IT modules completed</h5>
+
+
+                <p class="card-text">Datorteknik 1b</p>
+                <p class="card-text">Programmering 1</p>
+                <p class="card-text">Webbutveckling 1</p>
+                <p class="card-text">Webbutveckling 2</p>
+                <p class="card-text">Webbserverprogrammering 1</p>
+                <p class="card-text">Objektorienterad programmering C#</p>
+                <p class="card-text">Objektorienterad arkitektur C#</p>
+                <p class="card-text">Testdriven utveckling C#</p>
+                <p class="card-text">Agil mjukvaruutveckling</p>
+
+
             </div>
         </div>
-        <testing>willBeRemoved</testing>
-    </div>
+
+        <div class="card">
+            <img class="card-img-top" src="images\techniques.jpg" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">A school project</h5>
+                <p class="card-text"> <br>The Shinobi is a console application game my classmate David Strömand me
+                    created as an assignment during the class Objectorienterad programmering C#. You can watch a youtube
+                    demo of the game by using the link below.</p><span class="center-link"><a class="shinobi" href="https://youtu.be/eLZpNVm3f_A"
+                    rel="nofollow" target="_blank">Watch The Shinobi Here</a></span>
+            </div>
+        </div>
     <div class="contact" id="contact">
         <h2>contact</h2>
 
@@ -92,7 +101,9 @@
                 alt="Git.png"></a>
     </div>
     </div>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
+    </script>
     <script src="script/script.js"></script>
 
 </body>

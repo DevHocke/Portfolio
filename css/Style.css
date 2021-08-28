@@ -50,11 +50,7 @@ img{
     max-width: 100%;
 }
 
-ul{
-    display: block;
-    margin: 1em 0;
-    padding: 0;
-}
+
 nav li {
     list-style-type: none;
     margin-bottom: 0.5em;
@@ -66,21 +62,26 @@ nav li a {
     font-family: 'Fredoka One', cursive;
     font-size: 1.2rem;
     padding: 0.15em;
+    text-decoration: none;
 }
+
 /* nav li:last-of-type {
     margin-bottom: 3em;
 } */
 
-a:link {
+/* a:link {
     text-decoration: none;
     color: var(--text-link);
+} */
+#portfolio a{
+    text-decoration: none;
+    color: var(--text-golden);
 }
-
 a:visited {
     color: var(--text-link);
 }
 a:focus, a:hover{
-    color: var(--text-golden)
+    color: var(--text-golden);
 }
 
 .wrapper {
@@ -103,7 +104,30 @@ a:focus, a:hover{
  
 }
 
-
+.card-group{
+    min-width: 90em;
+}
+.card-title {
+    text-align: center;
+    font-weight: 900;
+    color: azure;
+    text-decoration-line: underline;
+  }
+  
+  .card-body {
+    background-color: #3E3E3E;
+  }
+  
+  .card-text {
+    color: azure;
+    text-align: left;
+    padding-left: 0.5em;
+  }
+  
+  .center-link {
+    display: block;
+    text-align: center;
+  }
 
 
 
@@ -127,8 +151,8 @@ a:focus, a:hover{
 } */ 
 
 /* ID myBtn och myBtn hover styr utseendet på scrollfunktionen i javascriptet.*/
-/* #myBtn {
-    background-color: #97afa3;
+#myBtn {
+    background-color: var(--clr-background-dark-gray);
     border-radius: 5px;
     border: none;
     bottom: 85px;
@@ -144,11 +168,10 @@ a:focus, a:hover{
 }
 
 #myBtn:hover {
-    background-color: #97afa3;
-} */
+    background-color: var(--clr-background-dark-gray);
+} 
 
-/* testar leka med grid för hero och deras text*/
-
+/* Heroe images and text decoration */
 .start {
     display: grid;
     grid-template-columns: 1fr;
@@ -195,17 +218,3 @@ a:focus, a:hover{
 }
 
 
-.portfolio{
-
-}
-
-.card {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-}
-    
-.classes { grid-area: 1 / 1 / 2 / 2; }
-.techniques { grid-area: 2 / 3 / 2 / 2; }
-.projects { grid-area: 2 / 1 / 3 / 2; }
-.cv { grid-area: 2 / 2 / 3 / 2; }  
