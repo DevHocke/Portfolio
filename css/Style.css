@@ -1,25 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400;1,600;1,700;1,800;1,900&display=swap');
 
-:root{
+:root {
     /* background color */
-   --clr-main-background: #EDEDED;
-   --clr-background-dark-green: #405559;
-   --clr-background-light-green: #68868C;
-   --clr-background-dark-gray: #3E3E3E;
-   /* Text colors */
-   --text-main: #EDEDED;
-   --text-golden: #E76F51;
-   --text-link: #e4e7e6;
-   --text-link-hover: #E76F51;
-   /* Fonts */
-   --font-standard: 'Motserrat 400', sans-serif; 
-   --font-h1: 'Montserrat 900', sans-serif;
+    --clr-main-background: #EDEDED;
+    --clr-background-dark-green: #405559;
+    --clr-background-light-green: #68868C;
+    --clr-background-dark-gray: #3E3E3E;
+    /* Text colors */
+    --text-main: #EDEDED;
+    --text-golden: #E76F51;
+    --text-link: #e4e7e6;
+    --text-link-hover: #E76F51;
+    /* Fonts */
+    --font-standard: 'Motserrat 400', sans-serif;
+    --font-h1: 'Montserrat 900', sans-serif;
 }
 
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body,
@@ -35,18 +35,19 @@ header {
     position: sticky;
     top: 0;
     left: 0;
-    background-color: var(--clr-background-dark-gray);
-    /* background-color: #97afa3; */
+    background-color: #405559;
     min-height: 10em;
     min-width: 100%;
     text-align: center;
 }
 
-header h1{
+header h1 {
     padding: 0.5em;
     margin: 0;
+  
 }
-img{
+
+img {
     max-width: 100%;
 }
 
@@ -65,22 +66,18 @@ nav li a {
     text-decoration: none;
 }
 
-/* nav li:last-of-type {
-    margin-bottom: 3em;
-} */
 
-/* a:link {
-    text-decoration: none;
-    color: var(--text-link);
-} */
-#portfolio a{
+#portfolio a {
     text-decoration: none;
     color: var(--text-golden);
 }
+
 a:visited {
     color: var(--text-link);
 }
-a:focus, a:hover{
+
+a:focus,
+a:hover {
     color: var(--text-golden);
 }
 
@@ -89,79 +86,57 @@ a:focus, a:hover{
     max-width: 100vw;
 }
 
-/* p {
-    font-size: 1.5rem;
-    color: black;
-} */
-.imageStretch{
+
+.imageStretch {
     object-fit: cover;
 }
 
 
-.headerText{
- font-family: var(--font-h1);
- font-size: 2rem;
- 
+.headerText {
+    color: var(--clr-main-background);
+    font-family: 'Fredoka One', cursive;
+    font-size: 2rem;
+
 }
 
-.card-group{
-    min-width: 30em;
+/* Card layouts */
+.card-group {
+    /* min-width: 30em; */
+   
 }
+
 .card-title {
     text-align: center;
     font-weight: 900;
-    color: azure;
+    color: var(--text-link);
     text-decoration-line: underline;
-  }
-  
-  .card-body {
+}
+
+.card-body {
     background-color: #3E3E3E;
-  }
-  
-  .card-text {
-    color: azure;
+}
+
+.card-text {
+    color: var(--text-link);
     text-align: left;
     padding-left: 0.5em;
-  }
-  
-  .center-link {
+}
+
+.center-link {
     display: block;
     text-align: center;
-  }
-
-
-
-/* Styr sociala medier länkarna i footern.*/
- /* #linkedin {
-    display: inline-block;
-    font-size: 30rem;
-    
-} */
-.footleft {
-    display: flex;
-    gap: 0.8rem;
-    padding-left: 1rem;
-    font-size: 4rem;
-    
-}
-.footleft a{
-    /* color: var(--text-golden); */
 }
 
-.footright{
-    text-align: end;
-    padding: 2rem 1rem 0 0;
-    font-size: 1.2rem;
-    color: var(--text-link);
-    font-weight: bold;
-    
-}
+
+
+
+
 
 
 
 /* ID myBtn och myBtn hover styr utseendet på scrollfunktionen i javascriptet.*/
 #myBtn {
-    background-color: var(--clr-background-light-green);
+    background-color: #405559;
     border-radius: 5px;
     border: none;
     bottom: 85px;
@@ -180,7 +155,7 @@ a:focus, a:hover{
     background-color: var(--text-link);
     color: var(--text-golden);
 
-} 
+}
 
 /* Heroe images and text decoration */
 .start {
@@ -227,21 +202,33 @@ a:focus, a:hover{
 .heroImgTwo {
     grid-area: 2 / 1 / 3 / 2;
 }
+
 .center-link {
     display: block;
     text-align: center;
-  }
+}
 
-  footer {
+footer {
     background-color: #3E3E3E;
     margin: 0;
-    min-width: 450px;
     padding: 0;
-  }
-  .pageSplitt {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: auto;
-  }
+}
 
+.footleft {
+    display: flex;
+    justify-content: center;
+    column-gap: 0.8em;
+    font-size: 4rem;
+    flex-wrap: wrap;
+}
+.footright {
+    display: block;
+    border-top: 1px solid gray;
+    background-color: #405559;
+    text-align: center;
+    padding: 0.3em 0 0.1em;
+    font-size: 1.2rem;
+    color: var(--text-link);
+    font-weight: bold;
+
+}
