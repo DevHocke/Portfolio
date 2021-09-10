@@ -85,6 +85,7 @@ a:visited {
 a:focus,
 a:hover {
     color: var(--text-golden);
+    transition: color ease-in-out 350ms;
 }
 
 .wrapper {
@@ -115,7 +116,7 @@ a:hover {
     border: 2px solid gray;
 }
 
-#contact {
+#contact{
     margin: 0;
 }
 
@@ -160,6 +161,7 @@ a:hover {
 
 #myBtn:hover {
     color: var(--text-golden);
+    transition: color ease-in-out 350ms;
 }
 
 /* Heroe images and text decoration */
@@ -252,32 +254,28 @@ footer {
     margin-bottom: 0;
     padding-bottom: 0.3em;
 }
-
 /* Controls the weather app in the contact card
    will be removed after the assignment is turned in.*/
-#weather {
+#weather{
     text-align: center;
     font-size: 0.8rem;
     margin-bottom: 0;
     padding: 0;
 }
-
-#temp {
+#temp{
     margin-bottom: 0;
     padding: 0;
 }
-
-#location {
-    margin-bottom: 0;
-    padding: 0;
+#location{
+ margin-bottom: 0;
+ padding: 0;
 }
 
 @media screen and (min-width: 768px) {
 
-    header h1 {
+    header h1{
         text-align: left;
     }
-
     nav li {
         display: inline-block;
     }
@@ -288,5 +286,37 @@ footer {
         right: 1.2em;
     }
 
+    /* .heroOneText {
+        background: rgb(64, 85, 89);
+        background: rgba(64, 85, 89, 0.4);
+        position: relative;
+        top: 50%;
+        text-align: left;
+        margin-left: 0.8em;
+        width: 30%;
+        max-width: 80ch;
+        z-index: 10;
+    }
 
+    .heroImgOne{
+        object-fit: cover;
+        min-height: 100%;
+        min-width: 100%;
+        position: relative;
+        top: -15em;
+    } */
+    /* .heroTwoText {
+        background: rgb(64, 85, 89);
+        background: rgba(64, 85, 89, 0.4);
+        position: relative;
+        top: 50%;
+        text-align: left;
+        margin-right: 1em;
+        max-width: 50ch;
+        z-index: 10;
+    }
+    .heroImgTwo{
+        position:relative;
+        top: -15em;
+    } */
 }
